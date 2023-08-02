@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WebPage</title>
+    <style>
+        body{
+            background: #fff;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            margin: 0px;
+        }
+        *{
+            box-sizing: border-box;
+        }
+        .container{
+            width: 90%;
+            margin: auto;
+        }
+        .h-left{
+            float: left;
+        }
+        .h-right{
+            float: right;
+        }
+        .h-right a{
+            float: left;
+            text-decoration: none;
+            color: black;
+            margin-left: 40px;
+            margin-top: 20px;
+            letter-spacing: 3px;
+            padding: 10px 20px;
+        }
+        .h-left p{
+            padding: 10px 20px;
+         }
+        .header{
+            letter-spacing: 3px;
+            background: #fff;
+            position: fixed;
+            width: 100%;
+            top: 0;
+            z-index: 1;
+        }
+        .h-left p:hover{
+            background: lightgrey;
+            padding: 10px 20px;
+        }
+        .h-right a:hover{
+            background: lightgrey;
+            padding: 10px 20px;
+        }
+        .row::after{
+            content: "";
+            clear: both;
+            display: table;
+        }
+        /*slide*/
+        .slide{
+            background: url('architect.jpg');
+            height: 800px;
+            width: 100%;
+        }
+        .slide p{
+            text-align: center;
+            color: white;
+            padding-top: 400px;
+            /*padding-bottom: 50px;*/
+            font-size: 30px;
+            letter-spacing: 3px;
+        }
+        .slide p span{
+            background: black;
+            padding: 10px 15px;
+            opacity: 0.7;
+        }
+        hr{
+            border: 1px solid #f1f1f1 !important;
+        }
+        .col{
+            width: 25%;
+            float: left;
+            padding: 10px;
+            position: relative;
+        }
+        .col img{
+            width: 100%;
+            
+        }
+        .col p{
+            position: absolute;
+            top: -6px;
+            left: 10px;
+            background: black;
+            color: #f1f1f1;
+            padding: 10px 20px;
+        }
+        .col1{
+            width: 25%;
+            float: left;
+            padding: 10px;
+            
+        }
+        .col1 img{
+            width: 100%;
+            
+        }
+        .col1 button{
+            width: 100%;
+            border: none;
+            padding: 10px 20px;
+        }
+        .col1 button:hover{
+            background: #b3b3b3;
+        }
+        .footer{
+            text-align: center;
+            background: black;
+            color: #f1f1f1;
+            padding: 10px 20px;
+        }
+        .footer a:hover{
+            
+            color: green;
+        }
+        .footer a{
+            color: #f1f1f1;
+        }
+        input[type="text"]
+        {
+         width: 100%;
+         padding: 10px;   
+        }
+        .btn1{
+            background: black;
+            color: white;
+            padding: 10px 20px;
+        }
+        .btn1:hover{
+            background: gray;
+            color: black;
+        }
+        @media screen and (max-width: 700px) 
+        {
+           .col,.col1{
+               width: 100%;
+           } 
+           .h-right{
+               float: none;
+               text-align: center;
+            }
+           .h-left{
+                float: none;
+           }
+           .h-right a{
+               margin-left: 25px;
+           }
+          
+        }
+    </style>
+</head>
+<body>
+    <!-- header -->
+    <div class="header">
+        <div class="container">
+            <div class="row">
+                <div class="h-left">
+                    <p><b>BR</b> Architect</p>
+                </div>
+                <div class="h-right">
+                    <a href="#project">Project</a>
+                    <a href="#About">About</a>
+                    <a href="#contact">Contact</a>
+                </div>
+            </div>
+            
+        </div>
+    </div>
+    <!-- header -->
+    <!-- slide -->
+    <div class="slide">
+        <p> <span>BR</span> Architect</p>
+    </div>
+    <!-- slide -->
+    <!-- project -->
+    <div id="project">
+        <div class="container">
+            <p style="font-size: 25px;">Project</p>
+            <hr>
+            <div class="row">
+                <div class="col">
+                    <img src="house8.jpg">
+                    <p>Summer House</p>
+                </div>
+                <div class="col">
+                    <img src="house2.jpg">
+                    <p>Brick House</p>
+                </div>
+                <div class="col">
+                    <img src="house3.jpg">
+                    <p>Renovated</p>
+                </div>
+                <div class="col">
+                    <img src="house4.jpg">
+                    <p>Barn House</p>
+                </div>
+                <div class="col">
+                    <img src="house7.jpg">
+                    <p>Summer House</p>
+                </div>
+                <div class="col">
+                    <img src="house8.jpg">
+                    <p>Brick House</p>
+                </div>
+                <div class="col">
+                    <img src="house4.jpg">
+                    <p>Renovated</p>
+                </div>
+                <div class="col">
+                    <img src="house3.jpg">
+                    <p>Barn House</p>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <!-- project -->
+    <!-- About -->
+        <div id="About">
+            <div class="container">
+                <p style="font-size: 25px;">About</p>
+                <hr>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. A tempora necessitatibus nisi. Quibusdam, totam? Quidem inventore fugiat quia eaque ullam voluptatum consequatur dolorum debitis quas, 
+                    necessitatibus, explicabo molestiae laborum ea. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Porro eligendi similique sit illum nobis nemo rem est, recusandae doloribus, atque ipsam ullam ducimus quia,
+                     distinctio id excepturi aut tenetur sed!</p>
+                     <div class="row">
+                         <div class="col1">
+                            <img src="team2.jpg">
+                            <h3>John Doe</h3>
+                            <p style="  font-family: Verdana, Geneva, Tahoma, sans-serif; font-size: 15px; line-height: 1.5; color: grey; ">CEO&Founder</p>
+                            <p>Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse sodales pellentesque elementum.</p>
+                            <button>Contact</button>
+                         </div>
+                         <div class="col1">
+                            <img src="team1.jpg">
+                            <h3>Jane Doe</h3>
+                            <p style="  font-family: Verdana, Geneva, Tahoma, sans-serif; font-size: 15px; line-height: 1.5; color: grey; ">Architect</p>
+                            <p>Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse sodales pellentesque elementum.</p>
+                            <button>Contact</button>
+                         </div>
+                         <div class="col1">
+                            <img src="team3.jpg">
+                            <h3>Mike Ross</h3>
+                            <p style="  font-family: Verdana, Geneva, Tahoma, sans-serif; font-size: 15px; line-height: 1.5; color: grey; ">Architect</p>
+                            <p>Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse sodales pellentesque elementum.</p>
+                            <button>Contact</button>
+                         </div>
+                         <div class="col1">
+                            <img src="team4.jpg">
+                            <h3>Dan Star</h3>
+                            <p style="  font-family: Verdana, Geneva, Tahoma, sans-serif; font-size: 15px; line-height: 1.5; color: grey; ">Architect</p>
+                            <p>Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse sodales pellentesque elementum.</p>
+                            <button>Contact</button>
+                         </div>
+                     </div>
+            </div>
+        </div>
+    <!-- About -->
+    <!-- Contact -->
+    <div id="contact">
+        <div class="container">
+    <h3>Contact Us</h3>
+    <p>Lets get in touch and talk about your next project.</p>
+    <input type="text" placeholder="Name"><br><br>
+    <input type="text" placeholder="Email"><br><br>
+    <input type="text" placeholder="Subject"><br><br>
+    <input type="text" placeholder="Comment"><br> <br>
+    <button class="btn1">Send Message</button><br><br>
+    </div>
+</div>
+    <!-- Contact -->
+    <!-- footer -->
+    <div class="footer">
+        <p>Powered by <a href="https://www.w3schools.com/">w3.css</a></p>
+    </div>
+    <!-- footer -->
+</body>
+</html>
